@@ -1,0 +1,5 @@
+selectors priority:
+
+inline(1000)> ID(100)> Class/attributes(10)> Element(!)> UniversalS(0)
+
+to overwrite inline css we can use "!important"
