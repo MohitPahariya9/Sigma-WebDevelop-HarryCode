@@ -1,3 +1,0 @@
-1)id always unique and alloted to the one. 
-2)class can be multiple of one div or span also, same class can be given to multiple div and spans.
-3)id's also helps in linking particular code or info.
