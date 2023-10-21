@@ -2,4 +2,4 @@ preload attribute - auto download file to play
 
 svg high graphic image
 
-iframe whole website inside one frame. embedd youtube videos too.
+iframe whole website inside one frame. embedd youtube videos too..
