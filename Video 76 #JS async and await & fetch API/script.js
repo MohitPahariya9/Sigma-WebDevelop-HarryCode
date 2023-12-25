@@ -27,6 +27,7 @@ async function getData() {
                 },
             })
     let data = await x.json() 
+    // let data = await x.text() 
     return data
 }
 
@@ -50,7 +51,7 @@ async function main(){
 main()
 
  
-
+//call back function used
 // data.then((v) => { 
 //     console.log(data)
 
