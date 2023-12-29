@@ -1,4 +1,4 @@
-// async function getData() {
+// function getData() {
 //     // Simulate getting data from a server
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
@@ -6,11 +6,29 @@
 //         }, 3500);
 //     })
 // }
+// //call back function used
+// let data = getData();
+// data.then((v) => { 
+//     console.log(data)
+
+//     console.log("process data")
+
+//     console.log("task 2")
+ 
+// })
 
 // settle means resolve or reject
 // resolve means promise has settled successfully
 // reject means promise has not settled successfully
 
+async function getData() {
+    // Simulate getting data from a server
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(455)
+        }, 3500);
+    })
+}
 async function getData() {
     // Simulate getting data from a server
     // let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -49,14 +67,3 @@ async function main(){
 }
 
 main()
-
- 
-//call back function used
-// data.then((v) => { 
-//     console.log(data)
-
-//     console.log("process data")
-
-//     console.log("task 2")
- 
-// })
