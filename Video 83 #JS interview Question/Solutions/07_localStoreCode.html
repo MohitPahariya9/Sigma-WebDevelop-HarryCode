@@ -14,7 +14,18 @@
         else{
             let a = prompt("Enter Your Name")
             localStorage.setItem("name" , a);
+            document.write("Welcome " + a)
         }
+        //json stringyfy for convert to store in local storage
+        /*
+        a={
+            "harry" : 1, "rohan" : 2}
+        JSON.stringify(a)
+        localStorage.setItem("guys", JSON.stringify(a));
+        localStorage.getItem("guys")
+        JSON.parse(localStorage.getItem("guys"))
+        */
+
     </script>
 </body>
 </html>
