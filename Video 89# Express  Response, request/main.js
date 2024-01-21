@@ -5,7 +5,7 @@ const shop = require('./routes/shop')
 
 
 const app = express()
-const port = 3000
+const port = 5500
 
 app.use(express.static("public"))
 app.use('/blog', blog)
@@ -24,6 +24,7 @@ app.put('/', (req, res) => {
     res.send('Hello World put!')
 })
 
+//to serve file over get request
 app.get("/index", (req, res) => {
     console.log("Hey its index")
     res.sendFile('templates/index.html', { root: __dirname })
