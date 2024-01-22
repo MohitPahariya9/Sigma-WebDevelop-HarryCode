@@ -1,0 +1,9 @@
+middleware it modify the request;
+
+types:-
+
+1-Application level middleware
+2-Router level
+3-error handling
+4-built-in
+5-third party
