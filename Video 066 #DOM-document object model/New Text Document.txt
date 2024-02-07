@@ -1,0 +1,7 @@
+DOM--> (document object model) tree like structure. page content in a systematic manner
+
+BOM--> (Browser object model) - additional obejct provided by browser.
+
+window(global object) --> window.document.body
+
+selected elements--> $0.style.backgoundColor = "green"  <--- to select particular object over the page has unique id.
