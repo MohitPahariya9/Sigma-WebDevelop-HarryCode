@@ -1,0 +1,5 @@
+async--- script rukta ni kisi ke liye or taal deta h like code ke beech setinterval.
+
+callback--> we can pass a function as a variable.
+
+promises---- if the execution is waited apart callback for smooth and non doom js code
