@@ -1,3 +1,0 @@
-difference between transition and animation is it gives more features for customization
-
-animation fill mode is after ending the animation it stays on th efinal position of the animation.
