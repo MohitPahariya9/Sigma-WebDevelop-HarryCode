@@ -1,2 +1,0 @@
-entities code for the collide code of html
-prism.js library code with harry code..
