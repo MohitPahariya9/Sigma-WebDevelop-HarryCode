@@ -1,0 +1,11 @@
+SEO/ Core Web Vital:
+
+CLS- cumulative Layout Shift- (Layout should not move or shift)	
+LCP- largest contentful paint (important part or image or font should load in less 				time idly 2.5sec pto 4 sec)
+FID- First Input Delay- 100 milli sec
+
+Chrome Browser > inspect > lighthouse (for suggestion to imrpove in site)  
+
+html boiler plate> meta:desc (add description)
+
+for info "web.dev"
