@@ -1,0 +1,3 @@
+ background-color: var(--color, blue); --> if color variable not found will use secondary option
+
+can be used not only in colour but can hold other string value parameters.
