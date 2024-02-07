@@ -1,0 +1,166 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Simulator</title>
+    <style>
+        body {
+            background-color: #00ff00; /* Green background */
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .terminal {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 0;
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal" id="terminal"></div>
+
+    <script>
+        const messages = [
+            "Initializing Hacking...",
+            "Reading your files...",
+            "Password files detected",
+            "Sending all passwords and personal data to server",
+            "Cleaning up..."
+        ];
+
+        const terminal = document.getElementById('terminal');
+
+        function simulateHacking() {
+            let currentIndex = 0;
+
+            function displayMessage() {
+                if (currentIndex < messages.length) {
+                    const message = messages[currentIndex];
+                    const delay = Math.floor(Math.random() * 7000) + 1000; // Random delay between 1 to 7 seconds
+                    setTimeout(() => {
+                        terminal.textContent = message;
+                        currentIndex++;
+                        displayMessage();
+                    }, delay);
+                } else {
+                    // Restart the simulation
+                    currentIndex = 0;
+                    displayMessage();
+                }
+            }
+
+            displayMessage();
+        }
+
+        simulateHacking();
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Simulator</title>
+    <style>
+        body {
+            background-color: #00ff00; /* Green background */
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .terminal {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 0;
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal" id="terminal"></div>
+
+    <script>
+        const messages = [
+            "Initializing Hacking...",
+            "Reading your files...",
+            "Password files detected",
+            "Sending all passwords and personal data to server",
+            "Cleaning up..."
+        ];
+
+        const terminal = document.getElementById('terminal');
+
+        function simulateHacking() {
+            let currentIndex = 0;
+
+            function displayMessage() {
+                if (currentIndex < messages.length) {
+                    const message = messages[currentIndex];
+                    const dots = '...';
+                    const combinedMessage = `${message} ${dots}`;
+                    const delay = Math.floor(Math.random() * 7000) + 1000; // Random delay between 1 to 7 seconds
+                    setTimeout(() => {
+                        terminal.textContent = combinedMessage;
+                        currentIndex++;
+                        displayMessage();
+                    }, delay);
+                } else {
+                    // Restart the simulation
+                    currentIndex = 0;
+                    displayMessage();
+                }
+            }
+
+            displayMessage();
+        }
+
+        simulateHacking();
+    </script>
+</body>
+</html>
