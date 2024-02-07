@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getRandomDelay() {
+            // Helper function to generate a random delay between 1 and 5 seconds
+            return Math.floor(Math.random() * 5000) + 1000; // Random delay between 1 and 5 seconds
+        }
+
+        async function brewCoffee(coffeeType) {
+            return new Promise((resolve, reject) => {
+                // Simulate the asynchronous process of brewing coffee with a random delay
+                const brewingTime = getRandomDelay();
+
+                setTimeout(() => {
+                    // Resolve the promise with a message indicating that the coffee is ready
+                    resolve(`Your ${coffeeType} coffee is ready! Enjoy!`);
+                }, brewingTime);
+            });
+        }
+
+        // Example usage:
+        async function makeCoffee() {
+            try {
+                const coffeeType = "Espresso"; // Replace with the desired coffee type
+                const result = await brewCoffee(coffeeType);
+                console.log(result);
+            } catch (error) {
+                console.error("Error brewing coffee:", error);
+            }
+        }
+
+        // Call the makeCoffee function to see the asynchronous coffee brewing in action
+        makeCoffee();
+
+    </script>
+</body>
+
+</html>
