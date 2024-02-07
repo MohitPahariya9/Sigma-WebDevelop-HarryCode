@@ -1,0 +1,11 @@
+giving object an additional properties which can be inherited from another class prototype
+syntax- xyz._prototype_ = abc
+static -  used to declare variable function used in class
+this - used to give refrence to class variable or object;
+super - it declare or give ref to immediate parent class.
+
+
+
+instanceof // to check referral
+
+l instanceof Lion
