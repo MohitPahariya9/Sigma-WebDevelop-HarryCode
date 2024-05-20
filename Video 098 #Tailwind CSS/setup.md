@@ -21,7 +21,7 @@ Step 3: create src/input.css to include:
 
 Step 4: Include the src/output.css file to your html
 
-Step 5: Run the following command:
+Step 5: Run the following command: write in package json as build{} to get when write npm run build
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
